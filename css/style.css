@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
 
-/* fonts 
+/* fonts
 font-family: 'Inter', sans-serif;
 font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -17,10 +18,10 @@ body{
     /* background-color: salmon; */
     max-width: 1200px;
     margin: 50px auto;
-    
+
 }
-/*------------------------------------------------ 
-Navigation Area 
+/*------------------------------------------------
+Navigation Area
 ------------------------------------------------*/
 .navigation{
     display: flex;
@@ -34,7 +35,7 @@ Navigation Area
 }
 .menu ul{
     display: flex;
-    
+
 }
 .menu ul li{
     list-style: none;
@@ -45,8 +46,8 @@ Navigation Area
     color: #3A3A3A;
 }
 
-/*-------------------------------------------- 
-Influencer Area 
+/*--------------------------------------------
+Influencer Area
 --------------------------------------------*/
 section{
     margin-top: 100px;
@@ -63,8 +64,8 @@ section{
 .influencer-text{
     padding-top: 16px;
     padding-bottom: 16px;
-    
-    
+
+
 }
 .primary-button{
     padding: 10px 24px;
@@ -99,7 +100,7 @@ section{
     margin-left: 10px;
 }
  /* -------------------------------
- Logo Area 
+ Logo Area
  ---------------------------------*/
 .logo-section ul{
     display: flex;
@@ -109,7 +110,7 @@ section{
     border-bottom: 1px solid rgb(226, 213, 213);
     padding-top: 30px;
     padding-bottom: 30px;
-    
+
 }
 .logo-section ul li{
     list-style: none;
@@ -120,7 +121,7 @@ section{
     font-weight: 600;
     color: #3A3A3A;
     text-align: center;
-   
+
     font-size: 28px;
     line-height: 70px
 }
@@ -143,7 +144,7 @@ section{
 .gear-image img{
     width: 300px;
     height: 256px;
-    
+
 }
 .gear-details{
     margin-top: 16px;
@@ -188,7 +189,7 @@ section{
     margin-bottom: 50px;
     margin-right: 20px;
 }
-/*-------------------------------------------- 
+/*--------------------------------------------
 our-services
  --------------------------------------------*/
  .services{
@@ -227,7 +228,7 @@ our-services
     width: 196px;
     height: 44px;
     font-weight: 700;
-    
+
     border: 0;
     cursor: pointer;
     box-shadow: 0 5px 0 #a5075e;
@@ -249,8 +250,8 @@ our-services
     background-color: #fff;
     color: #E02C6D;
 }
-/*---------------------------------------------- 
-Footer area 
+/*----------------------------------------------
+Footer area
 -------------------------------------------------*/
 footer{
     height: 200px;
@@ -280,20 +281,24 @@ footer{
     border-radius: 50%;
 }
 .social-icon ul li a{
-  
+
     color: #FFFFFF;
     text-decoration: none;
-    
+
 }
-/*-------------------------------------------------- 
-Responsive 
+/*--------------------------------------------------
+Responsive
 --------------------------------------------------*/
 /* ======================================
-mobile device 
+mobile device
 =========================================*/
 
 @media only screen and (max-width: 688px) {
-    
+    .container{
+        overflow: hidden;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
     .navigation{
         display: flex;
         flex-direction: column;
@@ -305,7 +310,7 @@ mobile device
     .influencer-area{
         display: flex;
         flex-direction: column;
-        
+
     }
     .influencer-info{
         text-align: center;
@@ -317,18 +322,18 @@ mobile device
     .primary-button{
         margin-left: 20%;
     }
-    .logo-section ul{
+    /* .logo-section ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border: 0;
-    }
-   
+    } */
+
     .gears{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-left: 40px;
-        
-     
+        /* padding-left: 40px; */
+
+
     }
     .services{
         display: grid;
@@ -337,7 +342,7 @@ mobile device
     }
 }
 /* ======================================
-Tablet device 
+Tablet device
 =========================================*/
 @media only screen and (min-width: 688px) and (max-width:992px){
     .navigation{
@@ -351,10 +356,10 @@ Tablet device
     .influencer-area{
         display: flex;
         flex-direction: column;
-        
+
     }
     .influencer-info{
-        
+
         text-align: center;
         margin-bottom: 50px;
     }
@@ -368,8 +373,8 @@ Tablet device
         grid-template-columns: repeat(2, 1fr);
         padding-left: 10px;
     }
-    
+
 }
 
-    
+
 
