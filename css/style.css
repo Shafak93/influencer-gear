@@ -75,6 +75,25 @@ section{
     width: 196px;
     height: 44px;
     font-weight: 700;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+    border: 1px solid #E02C6D;
+    outline: #E02C6D;
+}
+.primary-button:hover{
+    background-color: #fff;
+    color: #E02C6D;
 }
 .fa-arrow{
     margin-left: 10px;
@@ -148,8 +167,69 @@ section{
     font-size: 16px;
     font-weight: 700;
     margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
 }
-
+/*-------------------------------------------- 
+our-services
+ --------------------------------------------*/
+ .services{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 15px;
+ }
+ .service{
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 25px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+ }
+ .service .fas{
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color:#E02C6D;
+     color: white;
+     font-size: 20px;
+ }
+ .join-btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
+    
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .join-btn:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+    border: 1px solid #E02C6D;
+    outline: #E02C6D;
+}
+.join-btn:hover{
+    background-color: #fff;
+    color: #E02C6D;
+}
 /*---------------------------------------------- 
 Footer area 
 -------------------------------------------------*/
@@ -186,3 +266,63 @@ footer{
     text-decoration: none;
     
 }
+/*-------------------------------------------------- 
+Responsive 
+--------------------------------------------------*/
+/* ======================================
+mobile device 
+=========================================*/
+@media only screen and (max-width: 688px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer-area{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .influencer-info{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .gears, .services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 40px;
+     
+    }
+}
+/* ======================================
+Tablet device 
+=========================================*/
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer-area{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .influencer-info{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .gears{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 40px;
+    }
+}
+    
+
