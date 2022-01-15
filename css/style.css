@@ -98,6 +98,23 @@ section{
 .fa-arrow{
     margin-left: 10px;
 }
+ /* -------------------------------
+ Logo Area 
+ ---------------------------------*/
+.logo-section ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgb(226, 213, 213);
+    border-bottom: 1px solid rgb(226, 213, 213);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.logo-section ul li{
+    list-style: none;
+}
+
 /* Gear collection  */
 .gear-heading{
     font-weight: 600;
@@ -274,6 +291,7 @@ Responsive
 /* ======================================
 mobile device 
 =========================================*/
+
 @media only screen and (max-width: 688px) {
     
     .navigation{
@@ -299,10 +317,17 @@ mobile device
     .primary-button{
         margin-left: 20%;
     }
+    .logo-section ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 0;
+    }
+   
     .gears{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-left: 40px;
+        
      
     }
     .services{
