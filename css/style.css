@@ -19,6 +19,9 @@ body{
     margin: 0 auto;
     margin-top: 80px;
 }
+/*------------------------------------------------ 
+Navigation Area 
+------------------------------------------------*/
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -50,6 +53,136 @@ section{
 }
 .influencer-area{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.influencer-heading{
+    font-size: 52px;
+    color: #3A3A3A;
+}
+.influencer-text{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    
+}
+.primary-button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 41px;
+    outline: none;
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
+}
+.fa-arrow{
+    margin-left: 10px;
+}
+/* Gear collection  */
+.gear-heading{
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+   
+    font-size: 28px;
+    line-height: 70px
+}
+.gears{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gear{
+    margin-top: 30px;
+    padding: 5px;
+    width: 329px;
+    height: 476px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.gear-image img{
+    width: 300px;
+    height: 256px;
+    
+}
+.gear-details{
+    margin-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.gear-details h3{
+    font-size: 28px;
+    font-weight: 500;
+    color:  #18191F;
+}
+.gear-price{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.fa-star, .fa-star-half-alt{
+    color: #FB8200;;
+}
+.rating span{
+    font-family: 'Manrope', sans-serif;
+}
+.gear-description{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.seemore{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color:#E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+/*---------------------------------------------- 
+Footer area 
+-------------------------------------------------*/
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color:  #0A0826;
+    color: #fff;
+}
+.footer-header{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.social-icon ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.social-icon ul li{
+    width: 32px;
+    height: 32px;
+    list-style: none;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.social-icon ul li a{
+  
+    color: #FFFFFF;
+    text-decoration: none;
+    
 }
