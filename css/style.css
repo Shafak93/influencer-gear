@@ -275,6 +275,7 @@ Responsive
 mobile device 
 =========================================*/
 @media only screen and (max-width: 688px) {
+    
     .navigation{
         display: flex;
         flex-direction: column;
@@ -291,6 +292,9 @@ mobile device
     .influencer-info{
         text-align: center;
         margin-bottom: 50px;
+    }
+    .influencer-area .first-half img{
+        width: 100%;
     }
     .primary-button{
         margin-left: 20%;
