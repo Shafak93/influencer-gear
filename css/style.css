@@ -10,14 +10,14 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
 }
 body{
-    
+    background-color: #f2f4f8;
     font-family: 'Poppins', sans-serif;
 }
 .container{
     /* background-color: salmon; */
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin: 50px auto;
+    
 }
 /*------------------------------------------------ 
 Navigation Area 
@@ -68,8 +68,8 @@ section{
 }
 .primary-button{
     padding: 10px 24px;
-    background-color: #E02C6D;
-    color: #fff;
+    background-color: #fff;
+    color:  #E02C6D;
     border-radius: 41px;
     outline: none;
     width: 196px;
@@ -78,7 +78,7 @@ section{
     outline: 0;
     border: 0;
     cursor: pointer;
-    box-shadow: 0 7px 0 #a5075e;
+    box-shadow: 0 5px 0 #a5075e;
     position: relative;
     top: 0;
     display: flex;
@@ -203,8 +203,8 @@ our-services
  }
  .join-btn{
     padding: 10px 24px;
-    background-color: #E02C6D;
-    color: #fff;
+    background-color:  #fff;
+    color: #E02C6D;
     border-radius: 5px;
     outline: none;
     width: 196px;
@@ -213,13 +213,14 @@ our-services
     
     border: 0;
     cursor: pointer;
-    box-shadow: 0 7px 0 #a5075e;
+    box-shadow: 0 5px 0 #a5075e;
     position: relative;
     top: 0;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: .1s;
  }
  .join-btn:active{
     top: 5px;
@@ -291,11 +292,19 @@ mobile device
         text-align: center;
         margin-bottom: 50px;
     }
-    .gears, .services{
+    .primary-button{
+        margin-left: 20%;
+    }
+    .gears{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-left: 40px;
      
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 10px;
     }
 }
 /* ======================================
@@ -316,6 +325,7 @@ Tablet device
         
     }
     .influencer-info{
+        
         text-align: center;
         margin-bottom: 50px;
     }
@@ -324,6 +334,13 @@ Tablet device
         grid-template-columns: repeat(2, 1fr);
         padding-left: 40px;
     }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+    }
+    
 }
+
     
 
